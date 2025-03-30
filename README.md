@@ -17,3 +17,43 @@ To follow along with the course structure, navigate through the respective week 
 ## References
 - [Pix2Pix Paper](https://arxiv.org/abs/1611.07004)
 - [Original Implementation](https://github.com/phillipi/pix2pix)
+
+
+## Data Files Structure
+
+### Large Files Handling
+
+To comply with GitHub's file size limitations (50MB maximum recommended size), the large data files used in this project have been split into smaller chunks:
+
+- **train_data_sketch.txt** (~80MB) → split into multiple `train_data_sketch_part_*` files
+- **train_data_full.txt** (~80MB) → split into multiple `train_data_full_part_*` files
+
+All chunks are stored in the `data_chunks` directory.
+
+### Recombining Data Files
+
+To recombine the chunks into their original files for use in the project, use the included `combine_data_files.sh` script:
+
+```bash
+# Make the script executable (if needed)
+chmod +x combine_data_files.sh
+
+# Run the script
+./combine_data_files.sh
+```
+
+This will regenerate the original files:
+- `train_data_sketch.txt`
+- `train_data_full.txt`
+
+### Manual Recombination
+
+If the script doesn't work for you, you can manually recombine the files using these commands:
+
+```bash
+# For train_data_sketch.txt
+cat data_chunks/train_data_sketch_part_* > train_data_sketch.txt
+
+# For train_data_full.txt
+cat data_chunks/train_data_full_part_* > train_data_full.txt
+```
