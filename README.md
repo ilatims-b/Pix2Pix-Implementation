@@ -17,3 +17,18 @@ To follow along with the course structure, navigate through the respective week 
 ## References
 - [Pix2Pix Paper](https://arxiv.org/abs/1611.07004)
 - [Original Implementation](https://github.com/phillipi/pix2pix)
+## Contributors
+
+**Deputy Coordinators**  
+- Kirthan S  
+- Mohammed Ikram C C  
+- Mothish M  
+- Sanika Pradeep Nair  
+- Sharan Keshav  
+- Smitali Bhandari  
+- Vedant Misra  
+
+**Coordinators**  
+- Arjun Krishnaswamy  
+- Anshuman Mishra  
+
